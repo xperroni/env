@@ -1,0 +1,13 @@
+# GNU screen custom settings
+#
+# Create a filesystem link to enable:
+# $ cd
+# $ ln -s env/config/screenrc .screenrc
+
+# ------------------------------------------------------------------------------
+# TERMINAL SETTINGS
+# ------------------------------------------------------------------------------
+
+# Add lines to xterm's scrollback buffer
+termcapinfo xterm*|xs|rxvt ti@:te@
+
