@@ -41,6 +41,8 @@ nnoremap <S-F3> N
 " Configure CUA mode
 "
 
+nnoremap <C-n> :enew<CR>
+
 inoremap <expr> <C-s> bufname('%') == '' ? '<Esc>:save ':'<Esc>:w<CR>i'
 nnoremap <expr> <C-s> bufname('%') == '' ? ':save ':':w<CR>'
 
@@ -58,3 +60,4 @@ noremap <C-z> u
 inoremap <C-z> <Esc>ui
 inoremap <C-r> <Esc><C-r>ea
 
+nnoremap <C-w> :bw<CR>
