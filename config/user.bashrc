@@ -69,12 +69,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Add CUDA references to environment variables
-export PATH="$PATH:/usr/local/cuda-8.0/bin"
-export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64"
-
-# Add neovim-remote settings
-# https://github.com/mhinz/neovim-remote
+# Extend default application search path.
 export PATH="$PATH:$HOME/.local/bin"
-export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
-
