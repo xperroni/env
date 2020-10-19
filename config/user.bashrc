@@ -43,10 +43,16 @@ alias vim='nvr --remote'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# Function for cd'ing into a ROS workspace and automatically sourcing it.
+function cdros {
+  cd $1
+  source devel_isolated/setup.bash
+}
+
 # Function for creating a new folder and immediately entering it.
 function nudir {
-    mkdir -p $1
-    cd $1
+  mkdir -p $1
+  cd $1
 }
 
 # enable programmable completion features (you don't need to enable
